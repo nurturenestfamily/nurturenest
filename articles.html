@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J56FK1516C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J56FK1516C');
+</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Articles — NurtureNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --cream:#f0f7ff; --terracotta:#e07b54; --forest:#2e7d5e; --sage:#5aaa82; --ink:#1a2a3a; --muted:#4a6580; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:white; border-bottom:1px solid rgba(46,125,94,0.15); position:sticky; top:0; z-index:100; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:#2e7d5e; text-decoration:none; }
+    .logo span { color:#5aaa82; font-style:italic; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--terracotta); }
+    .hero { background:linear-gradient(135deg,#fdf0e8,#fde8e0); padding:4rem; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); margin-bottom:1rem; }
+    .hero p { color:var(--muted); max-width:480px; margin:0 auto; line-height:1.75; }
+    .section { padding:4rem; max-width:1100px; margin:0 auto; }
+    .articles-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+    .article-card { background:white; border-radius:20px; overflow:hidden; text-decoration:none; color:inherit; display:block; transition:transform 0.3s, box-shadow 0.3s; border:1px solid rgba(46,125,94,0.1); }
+    .article-card:hover { transform:translateY(-5px); box-shadow:0 20px 50px rgba(46,125,94,0.12); }
+    .article-img { height:160px; display:flex; align-items:center; justify-content:center; font-size:3.5rem; }
+    .article-body { padding:1.5rem; }
+    .article-tag { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:500; margin-bottom:0.6rem; }
+    .article-card h3 { font-family:'Playfair Display',serif; font-size:1.05rem; line-height:1.4; margin-bottom:0.8rem; }
+    .article-meta { font-size:0.78rem; color:var(--muted); display:flex; gap:1rem; }
+    footer { background:var(--ink); color:rgba(255,255,255,0.5); text-align:center; padding:2rem; font-size:0.85rem; }
+    footer a { color:#5aaa82; text-decoration:none; }
+    @media(max-width:800px) {
+      .hamburger { display:flex; }
+      .nav-links { display:none; } nav{padding:1rem 1.5rem;} .nav-links{display:none;} .hero{padding:2.5rem 1.5rem;} .section{padding:2rem 1.5rem;} .articles-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:500px) { .articles-grid{grid-template-columns:1fr;} }
+  
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:#1e2d24; border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:white; z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Playfair Display',serif; font-size:1.8rem; color:#1e2d24; text-decoration:none; transition:color 0.2s; }
+    .mobile-menu a:hover { color:#e07b54; }
+    .mobile-close { position:absolute; top:2rem; right:2rem; font-size:2rem; cursor:pointer; color:#5a7060; background:none; border:none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Nurture<span>Nest</span></a>
+  <ul class="nav-links">
+    <li><a href="topics.html">Topics</a></li>
+    <li><a href="articles.html" class="active">Articles</a></li>
+    <li><a href="monthly.html">Monthly</a></li><li><a href="community.html">Community</a></li>
+    <li><a href="experts.html">Experts</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>All Articles</h1>
+  <p>Evidence-based, expert-reviewed guides for every stage of your parenting journey.</p>
+</div>
+<div class="section">
+  <div class="articles-grid">
+    <a href="article-newborn.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#c8e8d8,#fdf0e8);">🍼</div>
+      <div class="article-body"><div class="article-tag" style="color:#2e7d5e;">Newborn & Baby</div><h3>The First 30 Days: What Nobody Tells You About Newborn Care</h3><div class="article-meta"><span>Dr. Sarah Mitchell</span><span>6 min read</span></div></div>
+    </a>
+    <a href="article-toddler.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#fde8d8,#fff5ee);">🧸</div>
+      <div class="article-body"><div class="article-tag" style="color:var(--terracotta);">Toddler Life</div><h3>Toddler Tantrums: Why They Happen & How to Respond Calmly</h3><div class="article-meta"><span>Dr. James Okafor</span><span>5 min read</span></div></div>
+    </a>
+    <a href="article-school.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#fdf0e8,#c8e8d8);">🎒</div>
+      <div class="article-body"><div class="article-tag" style="color:#2e7d5e;">Kids 4–8 Years</div><h3>Is My Child Ready for School? 10 Signs to Look For</h3><div class="article-meta"><span>Lisa Fernandez</span><span>4 min read</span></div></div>
+    </a>
+    <a href="article-teens.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#d8f0e5,#fdf0e8);">🧑‍🎓</div>
+      <div class="article-body"><div class="article-tag" style="color:#2e7d5e;">Tweens & Teens</div><h3>How to Talk to Your Teenager Without Them Shutting Down</h3><div class="article-meta"><span>Dr. James Okafor</span><span>7 min read</span></div></div>
+    </a>
+    <a href="article-selfcare.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#fff5ee,#fde8d8);">💛</div>
+      <div class="article-body"><div class="article-tag" style="color:var(--terracotta);">Parent Self-Care</div><h3>Parenting Multiple Kids: How to Give Each Child What They Need</h3><div class="article-meta"><span>Marcus & Tina Webb</span><span>6 min read</span></div></div>
+    </a>
+    <a href="article-activities.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#c8e8d8,#fde8e0);">🎨</div>
+      <div class="article-body"><div class="article-tag" style="color:var(--terracotta);">Activities & Crafts</div><h3>50 Screen-Free Activities for Kids of Every Age</h3><div class="article-meta"><span>Lisa Fernandez</span><span>10 min read</span></div></div>
+    </a>
+    <a href="article-sleep.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#1a2a3a,#2e7d5e);">🌙</div>
+      <div class="article-body"><div class="article-tag" style="color:#2e7d5e;">Sleep & Routines</div><h3>Sleep & Routines: What Really Works for Families</h3><div class="article-meta"><span>Dr. Sarah Mitchell</span><span>7 min read</span></div></div>
+    </a>
+    <a href="article-nutrition.html" class="article-card">
+      <div class="article-img" style="background:linear-gradient(135deg,#fef3ec,#fde4cc);">🥦</div>
+      <div class="article-body"><div class="article-tag" style="color:#2e7d5e;">Family Nutrition</div><h3>Family Nutrition: Feeding Every Age at Your Table</h3><div class="article-meta"><span>Dr. Sarah Mitchell</span><span>6 min read</span></div></div>
+    </a>
+  </div>
+</div>
+<footer>© 2026 NurtureNest. Made with ♥ for parents everywhere. | <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J56FK1516C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J56FK1516C');
+</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monthly Updates — NurtureNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --cream:#fef9f4; --terracotta:#e07b54; --forest:#2e7d5e; --sage:#5aaa82; --ink:#1e2d24; --muted:#5a7060; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:white; border-bottom:1px solid rgba(46,125,94,0.15); position:sticky; top:0; z-index:100; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:var(--forest); text-decoration:none; }
+    .logo span { color:var(--sage); font-style:italic; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--terracotta); }
+    .hero { background:linear-gradient(135deg,#c8e8d8,#fdf0e8); padding:4rem; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:var(--ink); margin-bottom:1rem; }
+    .hero p { color:var(--muted); max-width:520px; margin:0 auto; line-height:1.75; font-size:1.05rem; }
+    .section { padding:4rem; max-width:1100px; margin:0 auto; }
+    .months-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+    .month-card { background:white; border-radius:20px; overflow:hidden; text-decoration:none; color:inherit; display:block; transition:transform 0.3s, box-shadow 0.3s; border:1px solid rgba(46,125,94,0.1); }
+    .month-card:hover { transform:translateY(-5px); box-shadow:0 20px 50px rgba(30,45,36,0.12); }
+    .month-img { height:120px; display:flex; align-items:center; justify-content:center; font-size:3rem; }
+    .month-body { padding:1.5rem; }
+    .month-tag { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:500; color:var(--forest); margin-bottom:0.5rem; }
+    .month-card h3 { font-family:'Playfair Display',serif; font-size:1.05rem; line-height:1.4; margin-bottom:0.6rem; color:var(--ink); }
+    .month-card p { font-size:0.85rem; color:var(--muted); line-height:1.6; }
+    .month-arrow { font-size:0.82rem; color:var(--terracotta); font-weight:500; margin-top:0.8rem; }
+    footer { background:var(--ink); color:rgba(255,255,255,0.5); text-align:center; padding:2rem; font-size:0.85rem; }
+    footer a { color:var(--sage); text-decoration:none; }
+    @media(max-width:800px) {
+      .hamburger { display:flex; }
+      .nav-links { display:none; } nav{padding:1rem 1.5rem;} .nav-links{display:none;} .hero{padding:2.5rem 1.5rem;} .section{padding:2rem 1.5rem;} .months-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:500px) { .months-grid{grid-template-columns:1fr;} }
+  
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:#1e2d24; border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:white; z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Playfair Display',serif; font-size:1.8rem; color:#1e2d24; text-decoration:none; transition:color 0.2s; }
+    .mobile-menu a:hover { color:#e07b54; }
+    .mobile-close { position:absolute; top:2rem; right:2rem; font-size:2rem; cursor:pointer; color:#5a7060; background:none; border:none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Nurture<span>Nest</span></a>
+  <ul class="nav-links">
+    <li><a href="topics.html">Topics</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="monthly.html" class="active">Monthly</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="experts.html">Experts</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>📅 Monthly Parenting Updates</h1>
+  <p>Fresh, seasonal parenting guidance every month — expert-reviewed articles timed to what your family needs right now.</p>
+</div>
+<div class="section">
+  <div class="months-grid">
+    <a href="monthly-january.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#e8f5f0,#fdf0e8);">🎊</div>
+      <div class="month-body"><div class="month-tag">January</div><h3>New Year Family Goals That Actually Stick</h3><p>Set meaningful intentions as a family — and make them last past February.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-february.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#ffe8e8,#fff0f5);">❤️</div>
+      <div class="month-body"><div class="month-tag">February</div><h3>Raising Kind & Loving Children</h3><p>Evidence-based ways to build empathy, kindness, and emotional generosity.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-march.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#e8f5e8,#fdf0e8);">🌱</div>
+      <div class="month-body"><div class="month-tag">March</div><h3>Supporting Your Child's Learning at Home</h3><p>How to nurture a love of learning without becoming a tutor.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-april.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#f5e8f5,#fdf0e8);">🌸</div>
+      <div class="month-body"><div class="month-tag">April</div><h3>Helping Children Manage Anxiety & Worry</h3><p>Practical, expert-backed strategies for anxious children of every age.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-may.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#fff0e8,#fde8d8);">💐</div>
+      <div class="month-body"><div class="month-tag">May</div><h3>Parental Mental Health — You Matter Too</h3><p>Recognising burnout, asking for help, and protecting your own wellbeing.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-june.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#fff8d8,#fdf0e8);">☀️</div>
+      <div class="month-body"><div class="month-tag">June</div><h3>Your Family Summer Survival Guide</h3><p>Structure, screen time, learning, and fun — balancing it all in summer.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-july.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#fff8d8,#fdf0e8);">🏕️</div>
+      <div class="month-body"><div class="month-tag">July</div><h3>Outdoor Adventures & Active Play</h3><p>Why outdoor play matters more than ever — and 10 July adventures.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-august.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#e8f0ff,#fdf0e8);">🎒</div>
+      <div class="month-body"><div class="month-tag">August</div><h3>Back to School — Preparing Children & Parents</h3><p>Smooth transitions, school anxiety, and first-week survival tips.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-september.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#fff0e0,#fdf0e8);">📚</div>
+      <div class="month-body"><div class="month-tag">September</div><h3>Building Healthy Homework Habits</h3><p>The right environment, the right support, and how to help without taking over.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-october.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#ffe8d0,#fdf0e8);">📱</div>
+      <div class="month-body"><div class="month-tag">October</div><h3>Screen Time & Digital Wellbeing</h3><p>What the research really says — and how to set boundaries that work.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-november.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#ffe8c8,#fdf0e8);">🍂</div>
+      <div class="month-body"><div class="month-tag">November</div><h3>Raising Grateful Children & Family Traditions</h3><p>Building gratitude authentically — and the traditions that create belonging.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+    <a href="monthly-december.html" class="month-card">
+      <div class="month-img" style="background:linear-gradient(135deg,#e8f5e8,#fff0e8);">🎄</div>
+      <div class="month-body"><div class="month-tag">December</div><h3>A Stress-Free, Meaningful Holiday Season</h3><p>Protecting sleep, simplifying gifts, and keeping the magic real.</p><div class="month-arrow">Read article →</div></div>
+    </a>
+  </div>
+</div>
+<footer>© 2026 NurtureNest. Made with ♥ for parents everywhere. | <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body>
+</html>

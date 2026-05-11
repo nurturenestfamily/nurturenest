@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J56FK1516C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J56FK1516C');
+</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topics — NurtureNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --cream:#f0f7ff; --terracotta:#e07b54; --forest:#2e7d5e; --sage:#5aaa82; --ink:#1a2a3a; --muted:#4a6580; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:white; border-bottom:1px solid rgba(46,125,94,0.15); position:sticky; top:0; z-index:100; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:#2e7d5e; text-decoration:none; }
+    .logo span { color:#5aaa82; font-style:italic; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--terracotta); }
+    .hero { background:linear-gradient(135deg,#c8e8d8,#fdf0e8); padding:4rem; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); margin-bottom:1rem; }
+    .hero p { color:var(--muted); max-width:480px; margin:0 auto; line-height:1.75; }
+    .section { padding:4rem; max-width:1100px; margin:0 auto; }
+    .topics-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+    .topic-card { background:white; border-radius:20px; padding:2rem; border:1px solid rgba(46,125,94,0.15); text-decoration:none; color:inherit; display:block; transition:transform 0.3s, box-shadow 0.3s; position:relative; overflow:hidden; }
+    .topic-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--accent,var(--sage)); transform:scaleX(0); transition:transform 0.3s; }
+    .topic-card:hover { transform:translateY(-5px); box-shadow:0 20px 50px rgba(30,45,36,0.08); }
+    .topic-card:hover::after { transform:scaleX(1); }
+    .topic-icon { width:52px; height:52px; background:var(--icon-bg,#c8e8d8); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:1.2rem; }
+    .topic-card h3 { font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:0.6rem; }
+    .topic-card p { font-size:0.88rem; color:var(--muted); line-height:1.6; margin-bottom:1rem; }
+    .topic-arrow { font-size:0.82rem; color:var(--terracotta); font-weight:500; }
+    footer { background:var(--ink); color:rgba(255,255,255,0.5); text-align:center; padding:2rem; font-size:0.85rem; }
+    footer a { color:#5aaa82; text-decoration:none; }
+    @media(max-width:800px) {
+      .hamburger { display:flex; }
+      .nav-links { display:none; } nav{padding:1rem 1.5rem;} .nav-links{display:none;} .hero{padding:2.5rem 1.5rem;} .section{padding:2rem 1.5rem;} .topics-grid{grid-template-columns:1fr 1fr;} }
+  
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:#1e2d24; border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:white; z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Playfair Display',serif; font-size:1.8rem; color:#1e2d24; text-decoration:none; transition:color 0.2s; }
+    .mobile-menu a:hover { color:#e07b54; }
+    .mobile-close { position:absolute; top:2rem; right:2rem; font-size:2rem; cursor:pointer; color:#5a7060; background:none; border:none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Nurture<span>Nest</span></a>
+  <ul class="nav-links">
+    <li><a href="topics.html" class="active">Topics</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="monthly.html">Monthly</a></li><li><a href="community.html">Community</a></li>
+    <li><a href="experts.html">Experts</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>Explore All Topics</h1>
+  <p>Find expert guidance for every stage of your parenting journey — from newborns to teenagers.</p>
+</div>
+<div class="section">
+  <div class="topics-grid">
+    <a href="article-newborn.html" class="topic-card" style="--accent:#5aaa82; --icon-bg:#c8e8d8;"><div class="topic-icon">🍼</div><h3>Newborn & Baby</h3><p>Sleep, feeding, soothing techniques, and thriving in the first 12 months.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-toddler.html" class="topic-card" style="--accent:#e8734a; --icon-bg:#fde8e0;"><div class="topic-icon">🧸</div><h3>Toddler Life</h3><p>Tantrums, potty training, big emotions, and the wonderful world of toddlerhood.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-school.html" class="topic-card" style="--accent:#2e7d5e; --icon-bg:#fdf0e8;"><div class="topic-icon">🎒</div><h3>Kids (4–8 Years)</h3><p>School readiness, friendships, homework, and raising confident kids.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-teens.html" class="topic-card" style="--accent:#2e7d5e; --icon-bg:#c8e8d8;"><div class="topic-icon">🧑‍🎓</div><h3>Tweens & Teens</h3><p>Puberty, screen time, peer pressure, and staying connected.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-activities.html" class="topic-card" style="--accent:#e8734a; --icon-bg:#fde8e0;"><div class="topic-icon">🎨</div><h3>Activities & Crafts</h3><p>Screen-free activities, crafts, and creative projects for every age.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-selfcare.html" class="topic-card" style="--accent:#5aaa82; --icon-bg:#c8e8d8;"><div class="topic-icon">💛</div><h3>Parent Self-Care</h3><p>Managing burnout, balance, and giving each child what they need.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-sleep.html" class="topic-card" style="--accent:#2e7d5e; --icon-bg:#fdf0e8;"><div class="topic-icon">🌙</div><h3>Sleep & Routines</h3><p>Sleep training, nap transitions, and bedtime routines that work.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="article-nutrition.html" class="topic-card" style="--accent:#e8734a; --icon-bg:#fde8e0;"><div class="topic-icon">🥦</div><h3>Family Nutrition</h3><p>From introducing solids to picky eaters and healthy family meals.</p><div class="topic-arrow">Read articles →</div></a>
+    <a href="experts.html" class="topic-card" style="--accent:#5aaa82; --icon-bg:#c8e8d8;"><div class="topic-icon">🗣️</div><h3>Expert Interviews</h3><p>In-depth conversations with pediatricians, psychologists, and coaches.</p><div class="topic-arrow">Meet our experts →</div></a>
+  </div>
+</div>
+<footer>© 2026 NurtureNest. Made with ♥ for parents everywhere. | <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body>
+</html>

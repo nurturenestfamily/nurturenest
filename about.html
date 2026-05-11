@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J56FK1516C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J56FK1516C');
+</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us — NurtureNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --cream:#fef9f4; --terracotta:#e07b54; --forest:#2e7d5e; --sage:#5aaa82; --soft:#c8e8d8; --ink:#1e2d24; --muted:#5a7060; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:white; border-bottom:1px solid rgba(46,125,94,0.15); position:sticky; top:0; z-index:100; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:var(--forest); text-decoration:none; }
+    .logo span { color:var(--sage); font-style:italic; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--terracotta); }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--ink); border-radius:2px; transition:all 0.3s; }
+    .mobile-menu { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:white; z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--ink); text-decoration:none; }
+    .mobile-menu a:hover { color:var(--terracotta); }
+    .mobile-close { position:absolute; top:2rem; right:2rem; font-size:2rem; cursor:pointer; color:var(--muted); background:none; border:none; }
+    .hero { background:linear-gradient(135deg,#c8e8d8,#fdf0e8); padding:5rem 4rem; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.2rem,5vw,3.5rem); color:var(--ink); margin-bottom:1.2rem; }
+    .hero p { color:var(--muted); max-width:580px; margin:0 auto; line-height:1.8; font-size:1.05rem; }
+    .section { padding:5rem 4rem; max-width:1100px; margin:0 auto; }
+    .section-sm { padding:3rem 4rem; max-width:1100px; margin:0 auto; }
+    h2 { font-family:'Playfair Display',serif; font-size:2rem; color:var(--ink); margin-bottom:1rem; }
+    .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; margin-bottom:5rem; }
+    .story-visual { background:linear-gradient(135deg,#c8e8d8,#fdf0e8); border-radius:24px; padding:3rem; text-align:center; font-size:5rem; }
+    .story-text p { font-size:1rem; line-height:1.85; color:#2a3a2e; margin-bottom:1.2rem; }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin:2rem 0; }
+    .value-card { background:white; border-radius:20px; padding:2rem; border:1px solid rgba(46,125,94,0.12); text-align:center; }
+    .value-card .icon { font-size:2.5rem; margin-bottom:1rem; display:block; }
+    .value-card h3 { font-family:'Playfair Display',serif; font-size:1.1rem; margin-bottom:0.6rem; color:var(--ink); }
+    .value-card p { font-size:0.88rem; color:var(--muted); line-height:1.6; }
+    .team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
+    .team-card { background:white; border-radius:20px; padding:1.8rem 1.5rem; text-align:center; border:1px solid rgba(46,125,94,0.12); }
+    .team-avatar { width:70px; height:70px; border-radius:50%; margin:0 auto 1rem; display:flex; align-items:center; justify-content:center; font-size:2rem; }
+    .team-card h3 { font-family:'Playfair Display',serif; font-size:1rem; margin-bottom:0.3rem; }
+    .team-card .role { font-size:0.78rem; color:var(--terracotta); font-weight:500; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.8rem; }
+    .team-card p { font-size:0.83rem; color:var(--muted); line-height:1.6; }
+    .mission-box { background:var(--forest); color:white; border-radius:24px; padding:4rem; text-align:center; margin:3rem 0; }
+    .mission-box h2 { color:white; font-size:2.2rem; margin-bottom:1rem; }
+    .mission-box p { opacity:0.85; max-width:600px; margin:0 auto 2rem; line-height:1.8; font-size:1.05rem; }
+    .mission-box a { display:inline-block; background:var(--terracotta); color:white; padding:0.9rem 2rem; border-radius:50px; text-decoration:none; font-weight:500; transition:transform 0.2s; }
+    .mission-box a:hover { transform:scale(1.04); }
+    .stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; background:white; border-radius:20px; padding:2.5rem; margin:3rem 0; border:1px solid rgba(46,125,94,0.12); }
+    .stat { text-align:center; }
+    .stat-num { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:700; color:var(--forest); display:block; }
+    .stat-label { font-size:0.82rem; color:var(--muted); margin-top:0.3rem; }
+    footer { background:var(--ink); color:rgba(255,255,255,0.5); text-align:center; padding:2rem; font-size:0.85rem; }
+    footer a { color:var(--sage); text-decoration:none; }
+    @media(max-width:900px) {
+      nav { padding:1rem 1.5rem; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .hero { padding:3rem 1.5rem; }
+      .section, .section-sm { padding:3rem 1.5rem; }
+      .story-grid { grid-template-columns:1fr; gap:2rem; }
+      .values-grid { grid-template-columns:1fr 1fr; }
+      .team-grid { grid-template-columns:1fr 1fr; }
+      .stats-bar { grid-template-columns:1fr 1fr; gap:1.5rem; }
+      .mission-box { padding:2.5rem 1.5rem; }
+    }
+    @media(max-width:500px) {
+      .values-grid { grid-template-columns:1fr; }
+      .team-grid { grid-template-columns:1fr; }
+      .stats-bar { grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">✕</button>
+  <a href="index.html">Home</a>
+  <a href="topics.html">Topics</a>
+  <a href="articles.html">Articles</a>
+  <a href="monthly.html">Monthly</a>
+  <a href="community.html">Community</a>
+  <a href="experts.html">Experts</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+<nav>
+  <a href="index.html" class="logo">Nurture<span>Nest</span></a>
+  <ul class="nav-links">
+    <li><a href="topics.html">Topics</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="monthly.html">Monthly</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="experts.html">Experts</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="hero">
+  <h1>We're Here for the <em style="font-style:italic;color:var(--terracotta);">Real</em> Journey</h1>
+  <p>NurtureNest was built for every parent navigating the beautiful, messy, wonderful reality of raising children — with honest guidance, expert support, and a community that truly gets it.</p>
+</div>
+
+<div class="section">
+  <div class="story-grid">
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>NurtureNest was created by a parent who couldn't find one trusted place that brought together expert guidance, real parenting stories, and a warm community — without the judgment, the overwhelming ads, or the pressure to be a perfect parent.</p>
+      <p>We believe every parent deserves access to evidence-based information that's written in plain language, reviewed by real experts, and grounded in the understanding that parenting is hard — and that asking for guidance is a sign of strength, not weakness.</p>
+      <p>Based in Minneapolis, Minnesota, NurtureNest serves families across the United States and around the world — covering every stage from newborn through teenage years, with content that meets you exactly where you are.</p>
+    </div>
+    <div class="story-visual">🌿<br/><span style="font-size:1.2rem;font-family:'Playfair Display',serif;color:var(--forest);display:block;margin-top:1rem;">Growing together</span></div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">30+</span><div class="stat-label">Expert-reviewed articles</div></div>
+    <div class="stat"><span class="stat-num">4</span><div class="stat-label">Qualified expert reviewers</div></div>
+    <div class="stat"><span class="stat-num">12</span><div class="stat-label">Monthly seasonal guides</div></div>
+    <div class="stat"><span class="stat-num">100%</span><div class="stat-label">Free to access, always</div></div>
+  </div>
+
+  <h2 style="text-align:center;margin-bottom:0.5rem;">Our Values</h2>
+  <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">Everything we create is guided by these principles</p>
+  <div class="values-grid">
+    <div class="value-card"><span class="icon">🔬</span><h3>Evidence-Based</h3><p>Every article is grounded in peer-reviewed research and reviewed by qualified professionals before it reaches you.</p></div>
+    <div class="value-card"><span class="icon">💛</span><h3>Non-Judgmental</h3><p>There is no one right way to parent. We meet families where they are — with warmth, not prescriptions.</p></div>
+    <div class="value-card"><span class="icon">🌍</span><h3>Inclusive</h3><p>NurtureNest is for all parents — regardless of background, family structure, or parenting style.</p></div>
+    <div class="value-card"><span class="icon">🔓</span><h3>Always Free</h3><p>Quality parenting information should be accessible to every family. Our core content will always be free.</p></div>
+    <div class="value-card"><span class="icon">🤝</span><h3>Community First</h3><p>We believe parents support each other better than any algorithm. Real connection is at our heart.</p></div>
+    <div class="value-card"><span class="icon">✅</span><h3>Honest</h3><p>We share what the evidence actually says — even when it's nuanced, complex, or different from popular opinion.</p></div>
+  </div>
+</div>
+
+<div class="section-sm">
+  <h2 style="text-align:center;margin-bottom:0.5rem;">Meet Our Expert Panel</h2>
+  <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">Every article reviewed by qualified professionals</p>
+  <div class="team-grid">
+    <div class="team-card"><div class="team-avatar" style="background:#c8e8d8;">👩‍⚕️</div><h3>Dr. Sarah Mitchell</h3><div class="role">Pediatrician · 15 yrs</div><p>Newborn care, infant development, sleep & nutrition specialist.</p></div>
+    <div class="team-card"><div class="team-avatar" style="background:#fde8d8;">🧠</div><h3>Dr. James Okafor</h3><div class="role">Child Psychologist</div><p>Behaviour, emotional regulation & adolescent mental health.</p></div>
+    <div class="team-card"><div class="team-avatar" style="background:#e8f4fd;">👩‍🏫</div><h3>Lisa Fernandez</h3><div class="role">Early Education Specialist</div><p>School readiness, play-based learning & child development.</p></div>
+    <div class="team-card"><div class="team-avatar" style="background:#f0faf5;">👨‍👧‍👦</div><h3>Marcus & Tina Webb</h3><div class="role">Parent Coaches</div><p>Real-world parenting of four kids, family dynamics & self-care.</p></div>
+  </div>
+</div>
+
+<div class="section-sm">
+  <div class="mission-box">
+    <h2>Our Mission</h2>
+    <p>To be the most trusted, warm, and accessible parenting resource on the internet — giving every parent the confidence, knowledge, and community they need to raise happy, healthy children.</p>
+    <a href="articles.html">Start Reading →</a>
+  </div>
+</div>
+
+<footer>© 2026 NurtureNest. Made with ♥ for parents everywhere. | <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('mobileMenu').classList.remove('open')});</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J56FK1516C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J56FK1516C');
+</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community — NurtureNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --cream:#f0f7ff; --terracotta:#e07b54; --forest:#2e7d5e; --sage:#5aaa82; --soft:#c8e8d8; --ink:#1a2a3a; --muted:#4a6580; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 4rem; background:white; border-bottom:1px solid rgba(46,125,94,0.15); position:sticky; top:0; z-index:100; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:#2e7d5e; text-decoration:none; }
+    .logo span { color:#5aaa82; font-style:italic; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:0.9rem; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--terracotta); }
+    .hero { background:linear-gradient(135deg,#2e7d5e,#5aaa82); padding:5rem 4rem; text-align:center; color:white; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); margin-bottom:1rem; }
+    .hero p { font-size:1.1rem; opacity:0.85; max-width:500px; margin:0 auto 2rem; line-height:1.7; }
+    .section { padding:5rem 4rem; max-width:1100px; margin:0 auto; }
+    h2 { font-family:'Playfair Display',serif; font-size:2rem; color:var(--ink); margin-bottom:0.5rem; }
+    .section-sub { color:var(--muted); margin-bottom:3rem; font-size:1rem; }
+    .threads-grid { display:grid; gap:1.2rem; }
+    .thread { background:white; border-radius:16px; padding:1.5rem 2rem; border:1px solid rgba(46,125,94,0.15); display:flex; gap:1.5rem; align-items:flex-start; transition:box-shadow 0.2s; cursor:pointer; }
+    .thread:hover { box-shadow:0 8px 30px rgba(46,125,94,0.12); }
+    .thread-avatar { width:48px; height:48px; border-radius:50%; background:var(--soft); display:flex; align-items:center; justify-content:center; font-size:1.4rem; flex-shrink:0; }
+    .thread-tag { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:500; color:var(--terracotta); margin-bottom:0.3rem; }
+    .thread h3 { font-size:1rem; font-weight:600; color:var(--ink); margin-bottom:0.4rem; line-height:1.4; }
+    .thread p { font-size:0.88rem; color:var(--muted); line-height:1.6; }
+    .thread-meta { margin-top:0.8rem; font-size:0.78rem; color:var(--muted); display:flex; gap:1rem; }
+    .categories { display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-bottom:4rem; }
+    .category-card { background:white; border-radius:16px; padding:1.5rem; border:1px solid rgba(46,125,94,0.15); text-align:center; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s; }
+    .category-card:hover { transform:translateY(-3px); box-shadow:0 10px 30px rgba(46,125,94,0.1); }
+    .category-card .icon { font-size:2rem; margin-bottom:0.8rem; display:block; }
+    .category-card h3 { font-size:1rem; font-weight:600; color:var(--ink); margin-bottom:0.3rem; }
+    .category-card p { font-size:0.82rem; color:var(--muted); }
+    .join-box { background:#2e7d5e; color:white; border-radius:24px; padding:3rem; text-align:center; margin-top:4rem; }
+    .join-box h2 { color:white; margin-bottom:1rem; }
+    .join-box p { opacity:0.8; max-width:420px; margin:0 auto 2rem; line-height:1.7; }
+    .btn { display:inline-block; background:var(--terracotta); color:white; padding:0.9rem 2rem; border-radius:50px; font-weight:500; text-decoration:none; font-size:0.95rem; transition:transform 0.2s; }
+    .btn:hover { transform:scale(1.04); }
+    footer { background:var(--ink); color:rgba(255,255,255,0.5); text-align:center; padding:2rem; font-size:0.85rem; }
+    footer a { color:#5aaa82; text-decoration:none; }
+    @media(max-width:800px) {
+      .hamburger { display:flex; }
+      .nav-links { display:none; } nav{padding:1rem 1.5rem;} .nav-links{display:none;} .hero{padding:3rem 1.5rem;} .section{padding:3rem 1.5rem;} .categories{grid-template-columns:1fr 1fr;} .thread{flex-direction:column; gap:0.8rem;} }
+  
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:#1e2d24; border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:white; z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Playfair Display',serif; font-size:1.8rem; color:#1e2d24; text-decoration:none; transition:color 0.2s; }
+    .mobile-menu a:hover { color:#e07b54; }
+    .mobile-close { position:absolute; top:2rem; right:2rem; font-size:2rem; cursor:pointer; color:#5a7060; background:none; border:none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Nurture<span>Nest</span></a>
+  <ul class="nav-links">
+    <li><a href="topics.html">Topics</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="community.html" class="active">Community</a></li>
+    <li><a href="experts.html">Experts</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>You're Not Alone 💛</h1>
+  <p>Connect with thousands of parents going through the same beautiful, messy journey. Ask questions, share stories, and find your tribe.</p>
+  <a href="#discussions" class="btn">Browse Discussions</a>
+</div>
+<div class="section">
+  <h2>Browse by Category</h2>
+  <p class="section-sub">Find conversations that matter to you right now</p>
+  <div class="categories">
+    <div class="category-card"><span class="icon">🍼</span><h3>Newborn & Baby</h3><p>First-time parents & seasoned pros helping each other</p></div>
+    <div class="category-card"><span class="icon">🧸</span><h3>Toddler Life</h3><p>Tantrums, potty training & tiny human chaos</p></div>
+    <div class="category-card"><span class="icon">🎒</span><h3>School Years</h3><p>Homework help, friendships & school transitions</p></div>
+    <div class="category-card"><span class="icon">🧑‍🎓</span><h3>Tweens & Teens</h3><p>Navigating the teenage years together</p></div>
+    <div class="category-card"><span class="icon">💛</span><h3>Parent Self-Care</h3><p>Because you matter too — support & real talk</p></div>
+    <div class="category-card"><span class="icon">👨‍👩‍👧‍👦</span><h3>Multiple Kids</h3><p>Parenting two, three, or more? This one's for you</p></div>
+  </div>
+
+  <h2 id="discussions">Recent Discussions</h2>
+  <p class="section-sub">Join the conversation — real parents, real questions</p>
+  <div class="threads-grid">
+    <div class="thread"><div class="thread-avatar">👩</div><div><div class="thread-tag">🍼 Newborn</div><h3>My 6-week-old only sleeps on me — is this normal?</h3><p>She settles beautifully on my chest but the moment I put her down she wakes up. I'm exhausted but also don't want to break her trust...</p><div class="thread-meta"><span>💬 24 replies</span><span>❤️ 41 helpful</span><span>2 hours ago</span></div></div></div>
+    <div class="thread"><div class="thread-avatar">👨</div><div><div class="thread-tag">🧸 Toddler</div><h3>My 2-year-old bites at daycare — what do I do?</h3><p>The daycare called again today. He doesn't do it at home. I feel so embarrassed but also confused about how to help him...</p><div class="thread-meta"><span>💬 18 replies</span><span>❤️ 33 helpful</span><span>5 hours ago</span></div></div></div>
+    <div class="thread"><div class="thread-avatar">👩</div><div><div class="thread-tag">🎒 School Years</div><h3>How do I help my anxious 7-year-old make friends?</h3><p>She's shy and gets overwhelmed at birthday parties. She says she wants friends but then freezes up. My heart breaks for her...</p><div class="thread-meta"><span>💬 31 replies</span><span>❤️ 67 helpful</span><span>Yesterday</span></div></div></div>
+    <div class="thread"><div class="thread-avatar">👨</div><div><div class="thread-tag">🧑‍🎓 Teens</div><h3>My 14-year-old told me nothing about their day for 3 months straight</h3><p>I've tried everything. Car conversations, texting, leaving notes. I miss them even though they're right there. Anyone been through this?</p><div class="thread-meta"><span>💬 52 replies</span><span>❤️ 98 helpful</span><span>Yesterday</span></div></div></div>
+    <div class="thread"><div class="thread-avatar">👩</div><div><div class="thread-tag">💛 Self-Care</div><h3>Honest question: does the mum guilt ever go away?</h3><p>I went back to work last month and I cry in the car every morning. I know it's the right choice for our family but I just feel so torn...</p><div class="thread-meta"><span>💬 87 replies</span><span>❤️ 142 helpful</span><span>2 days ago</span></div></div></div>
+  </div>
+  <div class="join-box">
+    <h2>Ready to join the conversation?</h2>
+    <p>Sign up free to ask questions, share your story, and connect with parents who truly get it.</p>
+    <a href="index.html#newsletter" class="btn">Join NurtureNest Free</a>
+  </div>
+</div>
+<footer>© 2026 NurtureNest. Made with ♥ for parents everywhere. | <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body>
+</html>
